@@ -13,8 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Конфигурация
-TELEGRAM_TOKEN = "8380492578:AAGa9NzlRW9Zd2tESXTzpHnF7kTDCND0FPs"
-
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 class InstagramDownloader:
     def __init__(self):
         self.ydl_opts = {
